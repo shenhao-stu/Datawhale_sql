@@ -3,6 +3,8 @@
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
+- **Learner** : shenhao
+
 # 2.1 SELECT语句基础
 
 ## 2.1.1 从表中选取数据

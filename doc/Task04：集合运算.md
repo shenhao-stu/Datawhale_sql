@@ -3,6 +3,8 @@
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
+- **Learner** : shenhao
+
 # 4.1 表的加减法
 
 ## 4.1.1 什么是集合运算

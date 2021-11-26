@@ -3,6 +3,8 @@
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
+- **Learner** : shenhao
+
 之前接触了sql基本的查询用法，接下来介绍一些相对复杂的用法。
 
 # 3.1 视图
