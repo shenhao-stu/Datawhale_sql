@@ -3,14 +3,8 @@
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Learner** : shenhao
 
-=======
->>>>>>> 4680b321dcd094f4ad42858b4ff64e43f05461ca
-=======
->>>>>>> 4680b321dcd094f4ad42858b4ff64e43f05461ca
 # 4.1 表的加减法
 
 ## 4.1.1 什么是集合运算
