@@ -1,3 +1,8 @@
+<div align=center>
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+</div>
+<p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
+
 本章主要讲解数据库安装和数据库基本介绍，考虑易用性及普及度，本课程采取mysql进行教学。
 
 # 1.1 初识数据库

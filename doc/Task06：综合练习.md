@@ -1,3 +1,8 @@
+<div align=center>
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+</div>
+<p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
+
 # 练习一: 各部门工资最高的员工（难度：中等）
 
 创建Employee 表，包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。

@@ -1,4 +1,10 @@
+<div align=center>
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+</div>
+<p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
+
 # 本章重点:
+
 * 在电脑上安装MySQL数据库系统
 * 安装客户端并连接到本机上的MySQL数据库
 * 使用提供的脚本创建本教程所使用的示例数据库
