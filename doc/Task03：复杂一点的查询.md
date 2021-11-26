@@ -3,8 +3,11 @@
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
+<<<<<<< HEAD
 - **Learner** : shenhao
 
+=======
+>>>>>>> 4680b321dcd094f4ad42858b4ff64e43f05461ca
 之前接触了sql基本的查询用法，接下来介绍一些相对复杂的用法。
 
 # 3.1 视图
