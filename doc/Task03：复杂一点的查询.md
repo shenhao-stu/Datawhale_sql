@@ -1,3 +1,8 @@
+<div align=center>
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+</div>
+<p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
+
 之前接触了sql基本的查询用法，接下来介绍一些相对复杂的用法。
 
 # 3.1 视图

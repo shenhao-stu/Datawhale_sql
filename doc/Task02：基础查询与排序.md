@@ -1,3 +1,8 @@
+<div align=center>
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+</div>
+<p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
+
 # 2.1 SELECT语句基础
 
 ## 2.1.1 从表中选取数据

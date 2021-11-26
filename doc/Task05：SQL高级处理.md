@@ -1,3 +1,8 @@
+<div align=center>
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+</div>
+<p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
+
 # 5.1 窗口函数
 
 ## 5.1.1 窗口函数概念及基本的使用方法
