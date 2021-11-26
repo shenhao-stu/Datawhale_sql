@@ -15,9 +15,9 @@
 
 以下的文氏图展示了几种集合的基本运算.
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.01.png)
+![图片](../img/ch04/ch04.01.png)
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.02.png)
+![图片](../img/ch04/ch04.02.png)
 
 在数据库中， 所有的表--以及查询结果--都可以视为集合， 因此也可以把表视为集合进行上述集合运算， 在很多时候， 这种抽象非常有助于对复杂查询问题给出一个可行的思路.
 
@@ -38,7 +38,7 @@ FROM Product2;
 ```
 上述结果包含了两张表中的全部商品. 你会发现，这就是我们在学校学过的集合中的并集运算，通过文氏图会看得更清晰（图 7-1):
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.03union.png)
+![图片](../img/ch04/ch04.03union.png)
 
 通过观察可以发现，商品编号为“ 0001 ”~“ 0003 ”的 3 条记录在两个表中都存在，因此大家可能会认为结果中会出现重复的记录，但是 **UNION 等集合运算符通常都会除去重复的记录**.
 
@@ -50,7 +50,7 @@ FROM Product2;
 
 结果应该类似于:
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.04result.png)
+![图片](../img/ch04/ch04.04result.png)
 
 
 
@@ -137,13 +137,13 @@ FROM Product2;
 ```
 查询结果如下:
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.05result2.png)
+![图片](../img/ch04/ch04.05result2.png)
 
 **练习题:** 
 
 商店决定对product表中利润低于50%和售价低于1000的商品提价， 请使用UNION ALL 语句将分别满足上述两个条件的结果取并集. 查询结果类似下表: 
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.06result3.png)
+![图片](../img/ch04/ch04.06result3.png)
 
 参考答案
 
@@ -179,7 +179,7 @@ FROM Product2;
 ```
 上述查询能够正确执行，得到如下结果:
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.07result4.png)
+![图片](../img/ch04/ch04.07result4.png)
 
 **练习题:**
 
@@ -196,7 +196,7 @@ SELECT 'chars', 123, null
 ```
 上述代码的查询结果:
 
- ![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.08result5.png)
+ ![图片](../img/ch04/ch04.08result5.png)
 
 
 
@@ -226,7 +226,7 @@ FROM Product2
 
 求集合差集的减法运算和实数的减法运算有些不同， 当使用一个集合A减去另一个集合B的时候，对于只存在于集合B而不存在于集合A的元素， 采取直接忽略的策略，因此集合A和B做减法只是将集合A中也同时属于集合B的元素减掉。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.09except.png)
+![图片](../img/ch04/ch04.09except.png)
 
 ### 4.1.4.1 MySQL 8.0 还不支持 EXCEPT 运算
 
@@ -251,7 +251,7 @@ WHERE product_id NOT IN (SELECT product_id
 
 使用NOT谓词进行集合的减法运算， 求出Product表中， 售价高于2000，但利润不低于30%的商品， 结果应该如下表所示.
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.10.png)
+![图片](../img/ch04/ch04.10.png)
 
 参考答案:
 
@@ -291,7 +291,7 @@ WHERE
 
 使用AND谓词查找product表中利润率高于50%，并且售价低于1500的商品，查询结果如下所示.
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.11.png)
+![图片](../img/ch04/ch04.11.png)
 
 参考答案 
 
@@ -311,7 +311,7 @@ WHERE sale_price > 1.5 * purchase_price
 
 使用Product表和Product2表的对称差来查询哪些商品只在其中一张表， 结果类似于:
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.12.png)
+![图片](../img/ch04/ch04.12.png)
 
 提示：使用 NOT IN 实现两个表的差集。
 
@@ -337,7 +337,7 @@ WHERE product_id NOT IN (SELECT product_id FROM Product)
 
 但这些运算不能改变列的变化， 虽然使用函数或者 CASE表达式等列运算， 可以增加列的数量， 但仍然只能从一张表中提供的基础信息列中获得一些"引申列"， 本质上并不能提供更多的信息。如果想要从多个表获取信息， 例如， 如果我们想要找出某个商店里的衣服类商品的名称，数量及价格等信息， 则必须分别从 ShopProduct 表和 Product 表获取信息。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.13join.png)
+![图片](../img/ch04/ch04.13join.png)
 
 >注:
 >截至目前，本书中出现的示例(除了关联子查询)基本上都是从一张表中选取数据，但实际上，期望得到的数据往往会分散在不同的表之中， 这时候就需要使用连结了.
@@ -368,17 +368,17 @@ FROM <tb_1> INNER JOIN <tb_2> ON <condition(s)>
 
 我们先来分别观察所涉及的表， Product 表保存了商品编号，商品名称，商品种类等信息，这个表可以提供关于衣服种类的衣服的详细信息， 但是不能提供商店信息。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.14tb.png)
+![图片](../img/ch04/ch04.14tb.png)
 
 我们接下来观察 ShopProduct 表， 这个表里有商店编号名称，商店的商品编号及数量。但要想获取商品的种类及名称售价等信息，则必须借助于 Product 表。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.15shopproduct.png)
+![图片](../img/ch04/ch04.15shopproduct.png)
 
 所以问题的关键是， 找出一个类似于"轴"或者"桥梁"的公共列， 将两张表用这个列连结起来。这就是连结运算所要作的事情。
 
 我们来对比一下上述两张表， 可以发现， 商品编号列是一个公共列， 因此很自然的事情就是用这个商品编号列来作为连接的“桥梁”，将Product和ShopProduct这两张表连接起来。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.16tb73.png)
+![图片](../img/ch04/ch04.16tb73.png)
 
 >注:
 >如果你使用过 excel 的 vlookup 函数，你会发现这个函数正好也能够实现这个功能. 实际上，在思路上，关联子查询更像是 vlookup 函数: 以表 A 为主表，然后根据表 A 的关联列的每一行的取值，逐个到表 B 中的关联列中去查找取值相等的行.
@@ -407,7 +407,7 @@ FROM
 在上述查询中， 我们分别为两张表指定了简单的别名， 这种操作在使用连结时是非常常见的， 通过别名会让我们在编写查询时少打很多字， 并且更重要的是， 会让查询语句看起来更加简洁。
 上述查询将会得到如下的结果：
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.17result.png)
+![图片](../img/ch04/ch04.17result.png)
 
 观察查询结果， 我们看到，这个结果里的列已经包含了所有我们需要的信息。
 
@@ -533,7 +533,7 @@ FROM (-- 子查询 1:从 ShopProduct 表筛选出东京商店的信息
 
 找出每个商店里的衣服类商品的名称及价格等信息。希望得到如下结果：
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.18result2.png) 
+![图片](../img/ch04/ch04.18result2.png) 
 
 ```sql
 -- 参考答案 1--不使用子查询
@@ -567,7 +567,7 @@ FROM shopproduct AS SP
 
 分别使用连结两个子查询和不使用子查询的方式， 找出东京商店里， 售价低于 2000 的商品信息，希望得到如下结果.
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.19result3.png)
+![图片](../img/ch04/ch04.19result3.png)
 
 ```sql
 -- 参考答案
@@ -675,7 +675,7 @@ SELECT * FROM shopproduct AS SP INNER JOIN product AS P on SP.product_id=P.produ
 
 上述查询得到的结果， 会把两个表的公共列(这里是 product_id， 可以有多个公共列)放在第一列， 然后按照两个表的顺序和表中列的顺序， 将两个表中的其他列都罗列出来. 
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.20.png)  
+![图片](../img/ch04/ch04.20.png)  
 
 **练习题:**
 
@@ -698,7 +698,7 @@ SELECT  SP.product_id，SP.shop_id，SP.shop_name，SP.quantity
 SELECT * FROM Product NATURAL JOIN Product2
 ```
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.21.png)
+![图片](../img/ch04/ch04.21.png)
 
 这个结果和书上给的结果并不一致， 少了运动 T 恤， 这是由于运动 T 恤的 regist_date 字段为空， 在进行自然连结时， 来自于 Product 和 Product2 的运动 T 恤这一行数据在进行比较时， 实际上是在逐字段进行等值连结， 回忆我们在 6.2 ISNULL，IS NOT NULL 这一节学到的缺失值的比较方法就可得知， 两个缺失值用等号进行比较， 结果不为真。而连结只会返回对连结条件返回为真的那些行。
 
@@ -715,7 +715,7 @@ FROM
 
 那就可以得到正确的结果了:
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.22.png)
+![图片](../img/ch04/ch04.22.png)
 
 ### 4.2.1.7 使用连结求交集
 
@@ -735,7 +735,7 @@ FROM Product AS P1
 ```
 得到如下结果
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.23.png)
+![图片](../img/ch04/ch04.23.png)
 
 注意上述结果和 P230 的结果并不一致--少了 product_id='0001'这一行， 观察源表数据可发现， 少的这行数据的 regist_date 为缺失值， 回忆第六章讲到的 IS NULL 谓词， 我们得知， 这是由于缺失值是不能用等号进行比较导致的。
 
@@ -748,7 +748,7 @@ FROM Product AS P1
 ```
 查询结果：
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.24.png)
+![图片](../img/ch04/ch04.24.png)
 
 这次就一致了。
 
@@ -816,7 +816,7 @@ SELECT SP.shop_id
 
 使用外连结从ShopProduct表和Product表中找出那些在某个商店库存少于50的商品及对应的商店。希望得到如下结果。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.26.png)
+![图片](../img/ch04/ch04.26.png)
 
 注意高压锅和圆珠笔两种商品在所有商店都无货， 所以也应该包括在内。
 
@@ -872,7 +872,7 @@ FROM
 
 首先创建一个用于三表连结的表 InventoryProduct。首先我们创建一张用来管理库存商品的表，  假设商品都保存在 P001 和 P002 这 2 个仓库之中。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.29.png)
+![图片](../img/ch04/ch04.29.png)
 
 建表语句如下：
 
@@ -1020,7 +1020,7 @@ FROM
 注 1: COUNT 函数的参数是列名时， 会忽略该列中的缺失值， 参数为 * 时则不忽略缺失值。
 注 2: 上述排名方案存在一些问题--如果两个商品的价格相等， 则会导致两个商品的排名错误， 例如，  叉子和打孔器的排名应该都是第六， 但上述查询导致二者排名都是第七。试修改上述查询使得二者的排名均为第六。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.32.png)
+![图片](../img/ch04/ch04.32.png)
 
 注 3: 实际上， 进行排名有专门的函数， 这是 MySQL 8.0 新增加的窗口函数中的一种(窗口函数将在下一章学习)， 但在较低版本的 MySQL 中只能使用上述自左连结的思路。
 
@@ -1049,7 +1049,7 @@ ORDER BY
 ```
 查看查询结果
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.33.png)
+![图片](../img/ch04/ch04.33.png)
 
 看起来似乎没什么问题。
 
@@ -1075,7 +1075,7 @@ ORDER BY sale_price, product_id;
 ```
 得到的查询结果为：
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.34.png)
+![图片](../img/ch04/ch04.34.png)
 
 观察上述查询结果发现，由于有两种商品的售价相同，在使用 >= 进行连结时，导致了累计求和错误，这是由于这两种商品售价相同导致的. 因此实际上之前是不应该单独只用 >= 作为连结条件的。考察我们建立自左连结的本意，是要找出满足：
 1.比该商品售价更低的。
@@ -1106,7 +1106,7 @@ ORDER BY sale_price, cum_price;
 ```
 这次结果就正确了。
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.35.png)
+![图片](../img/ch04/ch04.35.png)
 
 ## 4.2.5 交叉连结—— CROSS JOIN(笛卡尔积)
 
@@ -1164,7 +1164,7 @@ FROM ShopProduct AS SP
 ```
 查询结果的一部分如下:
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.36.png)
+![图片](../img/ch04/ch04.36.png)
 
 然后对上述笛卡尔乘积增加筛选条件 SP.product_id=P.product_id， 就得到了和内连结一致的结果：
 
@@ -1177,7 +1177,7 @@ WHERE SP.product_id = P.product_id;
 ```
 查询结果如下：
 
-![图片](https://raw.fastgit.org/datawhalechina/team-learning-sql/main/img/ch04/ch04.37.png)
+![图片](../img/ch04/ch04.37.png)
 
 实际上， 正如书中所说， 上述写法中， 将 CROSS JOIN 改为逗号后， 正是内连结的旧式写法， 但在 ANSI 和 ISO 的 SQL-92 标准中， 已经将使用 INNER JION ..ON.. 的写法规定为标准写法， 因此极力推荐大家在平时写 SQL 查询时， 使用规范写法。 
 
