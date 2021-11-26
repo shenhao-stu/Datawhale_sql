@@ -47,7 +47,7 @@ FROM
 
 我们先忽略生成的新列 - [ranking]， 看下原始数据在PARTITION BY 和 ORDER BY 关键字的作用下发生了什么变化。
 
-**PARTITION BY 能够设定窗口对象范围。**本例中，为了按照商品种类进行排序，我们指定了product_type。即一个商品种类就是一个小的"窗口"。
+**PARTITION BY 能够设定窗口对象范围。** 本例中，为了按照商品种类进行排序，我们指定了product_type。即一个商品种类就是一个小的"窗口"。
 
 ORDER BY 能够指定按照哪一列、何种顺序进行排序。为了按照销售单价的升序进行排列，我们指定了sale_price。此外，窗口函数中的ORDER BY与SELECT语句末尾的ORDER BY一样，可以通过关键字ASC/DESC来指定升序/降序。省略该关键字时会默认按照ASC，也就是
 
@@ -213,6 +213,10 @@ ROLLUP 可以对多列进行汇总求小计和合计。
 ![图片](../img/ch05/ch0510.png)
 
 ## 5.4.2 **GROUPING**函数——让**NULL**更加容易分辨
+
+> Oracle、SQL Server、DB2、PostgreSQL的最新版本都已经支持这些本节所有的内容。
+> 但是可惜的是MySQL 8.0 并不支持 CUBE 和 GROUPING SETS。希望之后的版本能够提供对它们的支持。
+> **注：一下5.4的内容均在DB2中执行！**
 
 可能有些读者会注意到，之前使用 ROLLUP 所得到的结果有些蹊跷，问题就出在“衣服”的分组之中，有两条记录的 regist_date 列为 NULL，但其原因却并不相同。
 
