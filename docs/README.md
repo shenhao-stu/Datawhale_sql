@@ -1,5 +1,5 @@
 <div align=center>
-<img src="img/logo.png" width="250">
+<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
@@ -23,20 +23,20 @@ SQL 在诸多工作中应用广泛，数据分析、开发、测试、维护、�
 
 ## 学习进度
 
-* [x] [Task00_绪论 - 环境搭建](docs/Task00_绪论-环境搭建.md)
-* [x] [Task01_初识数据库](docs/Task01_初识数据库.md)
-* [x] [Task02_基础查询与排序](docs/Task02_基础查询与排序.md)
-* [x] [Task03_复杂一点的查询](docs/Task03_复杂一点的查询.md)
-* [x] [Task04_集合运算](docs/Task04_集合运算.md)
-* [x] [Task05_SQL高级处理](docs/Task05_SQL高级处理.md)
-* [ ] [Task06_综合练习](docs/Task06_综合练习.md)
-* [ ] [Task07_秋招秘籍A](docs/Task07_秋招秘籍A.md)
-* [ ] [Task08_秋招秘B](docs/Task08_秋招秘籍B.md)
-* [ ] [Task09_秋招秘籍C](docs/Task09_秋招秘籍C.md)
-* [x] [Task10_参考答案](docs/wonderful-sql.md)
+* [x] [Task00_绪论 - 环境搭建](Task00_绪论-环境搭建.md)
+* [x] [Task01_初识数据库](Task01_初识数据库.md)
+* [x] [Task02_基础查询与排序](Task02_基础查询与排序.md)
+* [x] [Task03_复杂一点的查询](Task03_复杂一点的查询.md)
+* [x] [Task04_集合运算](Task04_集合运算.md)
+* [x] [Task05_SQL高级处理](Task05_SQL高级处理.md)
+* [ ] [Task06_综合练习](Task06_综合练习.md)
+* [ ] [Task07_秋招秘籍A](Task07_秋招秘籍A.md)
+* [ ] [Task08_秋招秘B](Task08_秋招秘籍B.md)
+* [ ] [Task09_秋招秘籍C](Task09_秋招秘籍C.md)
+* [x] [Task10_参考答案](wonderful-sql.md)
 
 ## Datawhale
 
 > "Datawhale是一个专注AI领域的开源组织，以“for the learner，和学习者一起成长”为愿景，构建对学习者最有价值的开源学习社区。关注我们，一起学习成长。"
 
-![](img/datawhale_qrcode.jpeg)
+![datawhale_qrcode](https://gitee.com/shenhao-stu/picgo/raw/master/DataWhale/datawhale_qrcode.jpeg)
