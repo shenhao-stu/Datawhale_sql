@@ -97,5 +97,5 @@ INSERT INTO t_act_records VALUES('u1004', 20210105);
 
 可以参考下图
 
-A表：![](../img/ch09/C05A.jpg) B表：![图片](../img/ch09/C05B.jpg)
+A表：![](https://github.com/shenhao-stu/Datawhale_sql/raw/master/imgs/ch09/C05A.jpg) B表：![图片](https://github.com/shenhao-stu/Datawhale_sql/raw/master/imgs/ch09/C05B.jpg)
 

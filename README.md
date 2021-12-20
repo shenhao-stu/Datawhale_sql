@@ -1,5 +1,5 @@
 <div align=center>
-<img src="img/logo.png" width="250">
+<img src="https://github.com/shenhao-stu/Datawhale_sql/raw/master/imgs/logo.png" width="250">
 </div>
 <p align="center">MySQL | shenhao0223@163.sufe.edu.cn | 上海财经大学 </p>
 
@@ -21,6 +21,10 @@ SQL 在诸多工作中应用广泛，数据分析、开发、测试、维护、�
 - Navicat Premium 15
 - DataGrip
 
+## 食用方法
+
+:whale: 推荐使用 [**Datawhale SQL Github在线阅读**]([shenhao-stu.github.io/datawhale_sql/](https://shenhao-stu.github.io/Datawhale_sql/)) 进行学习。
+
 ## 学习进度
 
 * [x] [Task00_绪论 - 环境搭建](docs/Task00_绪论-环境搭建.md)
@@ -39,4 +43,4 @@ SQL 在诸多工作中应用广泛，数据分析、开发、测试、维护、�
 
 > "Datawhale是一个专注AI领域的开源组织，以“for the learner，和学习者一起成长”为愿景，构建对学习者最有价值的开源学习社区。关注我们，一起学习成长。"
 
-![](img/datawhale_qrcode.jpeg)
+![](https://github.com/shenhao-stu/Datawhale_sql/raw/master/imgs/datawhale_qrcode.jpeg)

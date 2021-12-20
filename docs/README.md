@@ -21,6 +21,10 @@ SQL 在诸多工作中应用广泛，数据分析、开发、测试、维护、�
 - Navicat Premium 15
 - DataGrip
 
+## 食用方法
+
+:whale: 推荐使用 [**Datawhale SQL Github在线阅读**]([shenhao-stu.github.io/datawhale_sql/](https://shenhao-stu.github.io/Datawhale_sql/)) 进行学习。
+
 ## 学习进度
 
 * [x] [Task00_绪论 - 环境搭建](Task00_绪论-环境搭建.md)
