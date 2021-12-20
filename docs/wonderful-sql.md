@@ -513,7 +513,7 @@ from (select a.date,
                (select date, sum(sales) as sum_salas from anchor_sales group by date) as X
                on a.date = X.date
       group by a.date) as Y
-where star_anchor > 0
+where star_anchor > 0;
 ```
 
 ![](https://gitee.com/shenhao-stu/picgo/raw/master/sql/8a05437febe3c7d648af21cb9e94051d.png)
