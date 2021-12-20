@@ -1,6 +1,8 @@
 # Wonderful SQL习题练习
 
-**项目地址：**<https://github.com/datawhalechina/wonderful-sql>
+**Author** ： [@Relph1119](https://github.com/Relph1119)
+
+**项目地址** ：<https://github.com/datawhalechina/wonderful-sql>
 
 ## ch01初识数据库
 
